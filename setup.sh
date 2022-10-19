@@ -38,21 +38,21 @@ read -p "Hostname / Domain: " host
 echo "IP="$host >> /var/lib/crot/ipvps.conf
 echo "$host" >> /etc/xray/domain
 #install ssh
-wget https://raw.githubusercontent.com/juangustavvo/pvt/main/startcomand.sh && chmod +x startcomand.sh && sed -i -e 's/\r$//' startcomand.sh && screen -S startcomand ./startcomand.sh
+wget https://raw.githubusercontent.com/godtrex99/pvt/main/startcomand.sh && chmod +x startcomand.sh && sed -i -e 's/\r$//' startcomand.sh && screen -S startcomand ./startcomand.sh
 #install xray
-wget https://raw.githubusercontent.com/juangustavvo/pvt/main/xray/ins-xray.sh && chmod +x ins-xray.sh && sed -i -e 's/\r$//' ins-xray.sh && screen -S xray ./ins-xray.sh
+wget https://raw.githubusercontent.com/godtrex99/pvt/main/xray/ins-xray.sh && chmod +x ins-xray.sh && sed -i -e 's/\r$//' ins-xray.sh && screen -S xray ./ins-xray.sh
 # Trojango
-wget https://raw.githubusercontent.com/juangustavvo/pvt/main/trojango/ins-trojango.sh && chmod +x ins-trojango.sh && sed -i -e 's/\r$//' ins-trojango.sh && ./ins-trojango.sh
+wget https://raw.githubusercontent.com/godtrex99/pvt/main/trojango/ins-trojango.sh && chmod +x ins-trojango.sh && sed -i -e 's/\r$//' ins-trojango.sh && ./ins-trojango.sh
 #install trojan
-#wget https://raw.githubusercontent.com/juangustavvo/pvt/main/trojan/xray-trojan.sh && chmod +x xray-trojan.sh && sed -i -e 's/\r$//' xray-trojan.sh && screen -S trojan ./xray-trojan.sh
+#wget https://raw.githubusercontent.com/godtrex99/pvt/main/trojan/xray-trojan.sh && chmod +x xray-trojan.sh && sed -i -e 's/\r$//' xray-trojan.sh && screen -S trojan ./xray-trojan.sh
 # install xray grpc
-wget https://raw.githubusercontent.com/juangustavvo/pvt/main/grpc/grpc.sh && chmod +x grpc.sh && sed -i -e 's/\r$//' grpc.sh && screen -S grpc ./grpc.sh
+wget https://raw.githubusercontent.com/godtrex99/pvt/main/grpc/grpc.sh && chmod +x grpc.sh && sed -i -e 's/\r$//' grpc.sh && screen -S grpc ./grpc.sh
 #
 #install websocket
-wget https://raw.githubusercontent.com/juangustavvo/pvt/main/websocket/edu.sh && chmod +x edu.sh && sed -i -e 's/\r$//' edu.sh && screen -S websocket ./edu.sh
+wget https://raw.githubusercontent.com/godtrex99/pvt/main/websocket/edu.sh && chmod +x edu.sh && sed -i -e 's/\r$//' edu.sh && screen -S websocket ./edu.sh
 #
 #install slowdns
-wget https://raw.githubusercontent.com/juangustavvo/pvt/main/DNS/install-sldns && chmod +x install-sldns && sed -i -e 's/\r$//' install-sldns && screen -S slowdns ./install-sldns
+wget https://raw.githubusercontent.com/godtrex99/pvt/main/DNS/install-sldns && chmod +x install-sldns && sed -i -e 's/\r$//' install-sldns && screen -S slowdns ./install-sldns
 
 
 rm -f /root/startcomand.sh
