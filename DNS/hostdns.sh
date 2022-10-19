@@ -10,11 +10,11 @@ rm nsdomain
 
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
 subsl=$(</dev/urandom tr -dc a-x0-9 | head -c4)
-DOMAIN=mehhosan.my.id
-SUB_DOMAIN=${sub}.mehhosan.my.id
-NS_DOMAIN=${subsl}.mehhosan.my.id
-CF_ID=mehhonih@gmail.com
-CF_KEY=e2cd1dcf880c414b109ede0576d5e7736e319
+DOMAIN=vip-onichanprem.cf
+SUB_DOMAIN=${sub}.vip-onichanprem.cf
+NS_DOMAIN=${subsl}.vip-onichanprem.cf
+CF_ID=william.fernando480@gmail.com
+CF_KEY=43d490e8829ebc2bf4937407f6455ca41a723
 echo "IP=""$SUB_DOMAIN" >> /root/cdndomain
 echo "$NS_DOMAIN" >> /root/nsdomain
 set -euo pipefail
