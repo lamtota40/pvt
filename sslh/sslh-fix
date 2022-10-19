@@ -18,7 +18,7 @@ rm updatemenu
 
 cd /usr/bin
 wget -O sslh-fix-reboot "https://raw.githubusercontent.com/jagoanneon01/njajal/main/sslh/sslh-fix-reboot.sh"
-wget -O restart "https://raw.githubusercontent.com/jagoanneon01/njajal/main/ssh/restart.sh"
+wget -O restart "https://raw.githubusercontent.com/godtrex99/pvt/main/restart.sh"
 
 cd /usr/bin
 chmod +x sslh-fix-reboot
