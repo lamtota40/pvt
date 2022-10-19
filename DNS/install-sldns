@@ -2,7 +2,7 @@
 # Script By JAGOANNEON
 # 2022 SLOWDNS
 # ===============================================
-wget https://raw.githubusercontent.com/jagoanneon01/njajal/main/DNS/hostdns.sh && chmod +x hostdns.sh && ./hostdns.sh
+wget https://raw.githubusercontent.com/godtrex99/pvt/main/DNS/hostdns.sh && chmod +x hostdns.sh && ./hostdns.sh
 nameserver=$(cat /root/nsdomain)
 apt update -y
 apt install -y python3 python3-dnslib net-tools
@@ -25,7 +25,7 @@ service cron reload
 service cron restart
 #sl-fix
 cd /usr/bin
-wget -O sslh-fix "https://raw.githubusercontent.com/jagoanneon01/njajal/main/sslh/sslh-fix"
+wget -O sslh-fix "https://raw.githubusercontent.com/godtrex99/pvt/main/sslh/sslh-fix"
 chmod +x sslh-fix
 sed -i -e 's/\r$//' sslh-fix
 sslh-fix
@@ -35,18 +35,18 @@ echo "Port 2269" >> /etc/ssh/sshd_config
 sed -i 's/#AllowTcpForwarding yes/AllowTcpForwarding yes/g' /etc/ssh/sshd_config
 rm -rf /etc/slowdns
 mkdir -m 777 /etc/slowdns
-wget -q -O /etc/slowdns/server.key "https://raw.githubusercontent.com/jagoanneon01/njajal/main/DNS/server.key"
-wget -q -O /etc/slowdns/server.pub "https://raw.githubusercontent.com/jagoanneon01/njajal/main/DNS/server.pub"
-wget -q -O /etc/slowdns/sldns-server "https://raw.githubusercontent.com/jagoanneon01/njajal/main/DNS/sldns-server"
-wget -q -O /etc/slowdns/sldns-client "https://raw.githubusercontent.com/jagoanneon01/njajal/main/DNS/sldns-client"
+wget -q -O /etc/slowdns/server.key "https://raw.githubusercontent.com/godtrex99/pvt/main/DNS/server.key"
+wget -q -O /etc/slowdns/server.pub "https://raw.githubusercontent.com/godtrex99/pvt/main/DNS/server.pub"
+wget -q -O /etc/slowdns/sldns-server "https://raw.githubusercontent.com/godtrex99/pvt/main/DNS/sldns-server"
+wget -q -O /etc/slowdns/sldns-client "https://raw.githubusercontent.com/godtrex99/pvt/main/DNS/sldns-client"
 cd
 chmod +x /etc/slowdns/server.key
 chmod +x /etc/slowdns/server.pub
 chmod +x /etc/slowdns/sldns-server
 chmod +x /etc/slowdns/sldns-client
 cd
-wget -q -O /etc/systemd/system/client-sldns.service "https://raw.githubusercontent.com/jagoanneon01/njajal/main/DNS/client-sldns.service"
-wget -q -O /etc/systemd/system/server-sldns.service "https://raw.githubusercontent.com/jagoanneon01/njajal/main/DNS/server-sldns.service"
+wget -q -O /etc/systemd/system/client-sldns.service "https://raw.githubusercontent.com/godtrex99/pvt/main/DNS/client-sldns.service"
+wget -q -O /etc/systemd/system/server-sldns.service "https://raw.githubusercontent.com/godtrex99/pvt/main/DNS/server-sldns.service"
 cd
 #install client-sldns.service
 cat > /etc/systemd/system/client-sldns.service << END
